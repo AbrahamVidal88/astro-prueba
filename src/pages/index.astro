@@ -3,285 +3,256 @@ import Layout from '../layouts/Layout.astro';
 
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Gamer Store">
 	<main>
-		<header class="flex items-center bg-[#eff3f4] pl-[130px]"> 
-			<div class="header container">
-				<a href="#" class="logo text-xl ">logo</a>
-				<input type="checkbox" id="menu"/>
-				<label for="menu">
-					<img src="images/menu.png" class="menu-icono" alt="menu">
-				</label>
-				<nav class="navbar">
-					<ul>
-						<li><a href="#">Inicio</a></li>
-						<li><a href="#">Plataformas</a></li>
-						<li><a href="#">Productos</a></li>
-						<li><a href="#">Contactos</a></li>
-					</ul>
-				</nav>
-				<div>
-					<ul>
-						<li class="submenu">
-							<img id="img-carrito" src="images/car.svg" alt="car">
-							<div id="carrito">
-								<table id="lista-carrito">
-									<thead>
-										<tr>
-											<th>Imagen</th>
-											<th>Nombre</th>
-											<th>Precio</th>
-										</tr>
-									</thead>
-									<tbody></tbody>
-								</table>
-								<a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+			<header class="head"> 
+				<div class="header container">
+					<a href="#" class="logo">logo</a>
+					<nav class="navbar">
+						<ul>
+							<li><a href="#">Inicio</a></li>
+							<li><a href="#">Plataformas</a></li>
+							<li><a href="#">Productos</a></li>
+							<li><a href="#">Contactos</a></li>
+						</ul>
+					</nav>
+					<div class="cart">
+						<img id="img-carrito" src="/images/car.svg" alt="car">
+						<div class="carrito-container">
+							<h3>Carrito de Compras</h3>
+							<div class="carrito-items"></div>
+							<div class="carrito-total">
+								<p>Total: <span>$0</span></p>
+								<button class="btn-3">Comprar</button>
 							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="header-content container">
-				<div class="header-txt" >
-					<span>Bienvenido a nuestro catalogo online</span>
-					<h1>Ofertas</h1>
-					<p>
-						Tenemos grandes ofertas cada semana de grandes juegos de diferentes plataformas.
-					</p>
-					<div class="buttons">
-						<a href="#" class="btn-1">Informacion</a>
-						<a href="#" class="btn-1">Leer mas</a>
+						</div>
 					</div>
 				</div>
-				<div class="header-img">
-					<img src="images/farcry5.jpeg" alt="">
-				</div>
-			</div>
 			</header>
-		 
-			<section class="oferts container">
-		
-				<div class="offert-1 b1">
-					<div class="offert-txt">
-						<h3>lorem impsum sit amet</h3>
-						<a href="#">Leer mas</a>
-					</div>
-					<div class="offert-img">
-						<img src="images/far-cry-4-xbox-one.jpg" alt="">
-					</div>
-				</div>
-				<div class="offert-1 b2">
-					<div class="offert-txt">
-						<h3>lorem impsum sit amet</h3>
-						<a href="#">Leer mas</a>
-					</div>
-					<div class="offert-img">
-						<img src="images/farcry5.jpeg" alt="">
-					</div>
-					</div>
-					<div class="offert-1 b3">
+			 
+				<section class="oferts container">
+			
+					<div class="offert-1 b1">
 						<div class="offert-txt">
 							<h3>lorem impsum sit amet</h3>
 							<a href="#">Leer mas</a>
 						</div>
 						<div class="offert-img">
-							<img src="images/farcry6.jpeg" alt="">
+							<img src="/images/far-cry-4-xbox-one.jpg" alt="Far Cry 4">
 						</div>
 					</div>
-				
-		
-			</section>
-			<main class="products container">
-		
-				<h2>Productos</h2>
-			  
-				<div class="box-container" id="list-1">
-				
-					<div class="box">
-						<img src="images/far-cry-4-xbox-one.jpg" alt="">
-						<div class="product-txt">
-							<h3>Far Cry 4</h3>
-							<p>Standar Edition</p>
-							<p class="precio">$150</p>
-							<a href="#" class="agregar-carrito btn-3" data-id="1">
-								Agregar al carrito</a>
+					<div class="offert-1 b2">
+						<div class="offert-txt">
+							<h3>lorem impsum sit amet</h3>
+							<a href="#">Leer mas</a>
+						</div>
+						<div class="offert-img">
+							<img src="/images/farcry5.jpeg" alt="Far Cry 5">
+						</div>
+						</div>
+						<div class="offert-1 b3">
+							<div class="offert-txt">
+								<h3>lorem impsum sit amet</h3>
+								<a href="#">Leer mas</a>
+							</div>
+							<div class="offert-img">
+								<img src="/images/farcry6.jpeg" alt="Far Cry 6">
+							</div>
+						</div>
+					
+			
+				</section>
+				<main class="products container">
+			
+					<h2>Productos</h2>
+				  
+					<div class="box-container" id="list-1">
+					
+						<div class="box">
+							<img src="/images/far-cry-4-xbox-one.jpg" alt="Far Cry 4">
+							<div class="product-txt">
+								<h3>Far Cry 4</h3>
+								<p>Standar Edition</p>
+								<p class="precio">$150</p>
+								<a href="#" class="agregar-carrito btn-3" data-id="1">
+									Agregar al carrito</a>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/farcry5.jpeg" alt="Far Cry 5">
+							<div class="product-txt">
+								<h3>Far Cry 5</h3>
+								<p>Gold Edition</p>
+								<p class="precio">$299</p>
+								<a href="#" class="agregar-carrito btn-3" data-id="2">
+									Agregar al carrito</a>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/farcry6.jpeg" alt="Far Cry 6">
+							<div class="product-txt">
+								<h3>Far Cry 6</h3>
+								<p>Gold Edition</p>
+								<p class="precio">$519</p>
+								<a href="#" class="agregar-carrito btn-3" data-id="3">
+									Agregar al carrito</a>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/farcry5.jpeg" alt="Far Cry 5">
+							<div class="product-txt">
+								<h3>Far Cry 6</h3>
+								<p>Gold Edition</p>
+								<p class="precio">$519</p>
+								<a href="#" class="agregar-carrito btn-3" data-id="4">
+									Agregar al carrito</a>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/far-cry-4-xbox-one.jpg" alt="Far Cry 4">
+							<div class="product-txt">
+								<h3>Far Cry 6</h3>
+								<p>Gold Edition</p>
+								<p class="precio">$519</p>
+								<a href="#" class="agregar-carrito btn-3" data-id="5">
+									Agregar al carrito</a>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/far-cry-4-xbox-one.jpg" alt="Far Cry 4">
+							<div class="product-txt">
+								<h3>Far Cry 6</h3>
+								<p>Gold Edition</p>
+								<p class="precio">$519</p>
+								<a href="#" class="agregar-carrito btn-3" data-id="6">
+									Agregar al carrito</a>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/far-cry-4-xbox-one.jpg" alt="Far Cry 4">
+							<div class="product-txt">
+								<h3>Far Cry 6</h3>
+								<p>Gold Edition</p>
+								<p class="precio">$519</p>
+								<a href="#" class="agregar-carrito btn-3" data-id="7">
+									Agregar al carrito</a>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/far-cry-4-xbox-one.jpg" alt="Far Cry 4">
+							<div class="product-txt">
+								<h3>Far Cry 6</h3>
+								<p>Gold Edition</p>
+								<p class="precio">$519</p>
+								<a href="#" class="agregar-carrito btn-3" data-id="8">
+									Agregar al carrito</a>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/far-cry-4-xbox-one.jpg" alt="Far Cry 4">
+							<div class="product-txt">
+								<h3>Far Cry 6</h3>
+								<p>Gold Edition</p>
+								<p class="precio">$519</p>
+								<a href="#" class="agregar-carrito btn-3" data-id="9">
+									Agregar al carrito</a>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/far-cry-4-xbox-one.jpg" alt="Far Cry 4">
+							<div class="product-txt">
+								<h3>Far Cry 6</h3>
+								<p>Gold Edition</p>
+								<p class="precio">$519</p>
+								<a href="#" class="agregar-carrito btn-3" data-id="10">
+									Agregar al carrito</a>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/far-cry-4-xbox-one.jpg" alt="Far Cry 4">
+							<div class="product-txt">
+								<h3>Far Cry 6</h3>
+								<p>Gold Edition</p>
+								<p class="precio">$519</p>
+								<a href="#" class="agregar-carrito btn-3" data-id="11">
+									Agregar al carrito</a>
+							</div>
+						</div>
+						<div class="box">
+							<img src="/images/far-cry-4-xbox-one.jpg" alt="Far Cry 4">
+							<div class="product-txt">
+								<h3>Far Cry 6</h3>
+								<p>Gold Edition</p>
+								<p class="precio">$519</p>
+								<a href="#" class="agregar-carrito btn-3" data-id="12">
+									Agregar al carrito</a>
+							</div>
 						</div>
 					</div>
-					<div class="box">
-						<img src="images/farcry5.jpeg" alt="">
-						<div class="product-txt">
-							<h3>Far Cry 5</h3>
-							<p>Gold Edition</p>
-							<p class="precio">$299</p>
-							<a href="#" class="agregar-carrito btn-3" data-id="2">
-								Agregar al carrito</a>
+			
+					<div class="btn-2" id="load-more">Cargar mas</div>
+				</main>
+			
+				<section class="Testimonial container">
+					<span>Testimonial</span>
+						<h2>Que opinan nuestros clientes</h2>
+						<div class="Testimonial-content">
+							<div class="testimonial-1">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+									Reprehenderit quidem aut, nam, obcaecati veniam cupiditate 
+									consectetur illum, repudiandae necessitatibus tempore similique 
+									et dolores officiis excepturi? 
+									A delectus excepturi optio sequi.
+								</p>
+								<img src="/images/starts.png" alt="Estrellas">
+								<h4>Lorem impsum</h4>
+							</div>
+							<div class="testimonial-1">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+									Reprehenderit quidem aut, nam, obcaecati veniam cupiditate 
+									consectetur illum, repudiandae necessitatibus tempore similique 
+									et dolores officiis excepturi? 
+									A delectus excepturi optio sequi.
+								</p>
+								<img src="/images/starts.png" alt="Estrellas">
+								<h4>Lorem impsum</h4>
+							</div>
+						</div>
+				</section>
+				<footer class="footer">
+					<div class="footer-content ">
+						<div class="link">
+							<h3>Lorem</h3>
+							<ul>
+								<li><a href="#">lorem</a></li>
+								<li><a href="#">lorem</a></li>
+								<li><a href="#">lorem</a></li>
+								<li><a href="#">lorem</a></li>
+							</ul>
+						</div>
+						<div class="link">
+							<h3>Lorem</h3>
+							<ul>
+								<li><a href="#">lorem</a></li>
+								<li><a href="#">lorem</a></li>
+								<li><a href="#">lorem</a></li>
+								<li><a href="#">lorem</a></li>
+							</ul>
+						</div>
+						<div class="link">
+							<h3>Lorem</h3>
+							<ul>
+								<li><a href="#">lorem</a></li>
+								<li><a href="#">lorem</a></li>
+								<li><a href="#">lorem</a></li>
+								<li><a href="#">lorem</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="box">
-						<img src="images/farcry6.jpeg" alt="">
-						<div class="product-txt">
-							<h3>Far Cry 6</h3>
-							<p>Gold Edition</p>
-							<p class="precio">$519</p>
-							<a href="#" class="agregar-carrito btn-3" data-id="3">
-								Agregar al carrito</a>
-						</div>
-					</div>
-					<div class="box">
-						<img src="images/farcry5.jpeg" alt="">
-						<div class="product-txt">
-							<h3>Far Cry 6</h3>
-							<p>Gold Edition</p>
-							<p class="precio">$519</p>
-							<a href="#" class="agregar-carrito btn-3" data-id="4">
-								Agregar al carrito</a>
-						</div>
-					</div>
-					<div class="box">
-						<img src="images/far-cry-4-xbox-one.jpg" alt="">
-						<div class="product-txt">
-							<h3>Far Cry 6</h3>
-							<p>Gold Edition</p>
-							<p class="precio">$519</p>
-							<a href="#" class="agregar-carrito btn-3" data-id="5">
-								Agregar al carrito</a>
-						</div>
-					</div>
-					<div class="box">
-						<img src="images/far-cry-4-xbox-one.jpg" alt="">
-						<div class="product-txt">
-							<h3>Far Cry 6</h3>
-							<p>Gold Edition</p>
-							<p class="precio">$519</p>
-							<a href="#" class="agregar-carrito btn-3" data-id="6">
-								Agregar al carrito</a>
-						</div>
-					</div>
-					<div class="box">
-						<img src="images/far-cry-4-xbox-one.jpg" alt="">
-						<div class="product-txt">
-							<h3>Far Cry 6</h3>
-							<p>Gold Edition</p>
-							<p class="precio">$519</p>
-							<a href="#" class="agregar-carrito btn-3" data-id="7">
-								Agregar al carrito</a>
-						</div>
-					</div>
-					<div class="box">
-						<img src="images/far-cry-4-xbox-one.jpg" alt="">
-						<div class="product-txt">
-							<h3>Far Cry 6</h3>
-							<p>Gold Edition</p>
-							<p class="precio">$519</p>
-							<a href="#" class="agregar-carrito btn-3" data-id="8">
-								Agregar al carrito</a>
-						</div>
-					</div>
-					<div class="box">
-						<img src="images/far-cry-4-xbox-one.jpg" alt="">
-						<div class="product-txt">
-							<h3>Far Cry 6</h3>
-							<p>Gold Edition</p>
-							<p class="precio">$519</p>
-							<a href="#" class="agregar-carrito btn-3" data-id="9">
-								Agregar al carrito</a>
-						</div>
-					</div>
-					<div class="box">
-						<img src="images/far-cry-4-xbox-one.jpg" alt="">
-						<div class="product-txt">
-							<h3>Far Cry 6</h3>
-							<p>Gold Edition</p>
-							<p class="precio">$519</p>
-							<a href="#" class="agregar-carrito btn-3" data-id="10">
-								Agregar al carrito</a>
-						</div>
-					</div>
-					<div class="box">
-						<img src="images/far-cry-4-xbox-one.jpg" alt="">
-						<div class="product-txt">
-							<h3>Far Cry 6</h3>
-							<p>Gold Edition</p>
-							<p class="precio">$519</p>
-							<a href="#" class="agregar-carrito btn-3" data-id="11">
-								Agregar al carrito</a>
-						</div>
-					</div>
-					<div class="box">
-						<img src="images/far-cry-4-xbox-one.jpg" alt="">
-						<div class="product-txt">
-							<h3>Far Cry 6</h3>
-							<p>Gold Edition</p>
-							<p class="precio">$519</p>
-							<a href="#" class="agregar-carrito btn-3" data-id="12">
-								Agregar al carrito</a>
-						</div>
-					</div>
-				</div>
-		
-				<div class="btn-2" id="load-more">Cargar mas</div>
-			</main>
-		
-			<section class="Testimonial container">
-				<span>Testimonial</span>
-					<h2>Que opinan nuestros clientes</h2>
-					<div class="Testimonial-content">
-						<div class="testimonial-1">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								Reprehenderit quidem aut, nam, obcaecati veniam cupiditate 
-								consectetur illum, repudiandae necessitatibus tempore similique 
-								et dolores officiis excepturi? 
-								A delectus excepturi optio sequi.
-							</p>
-							<img src="images/starts.png" alt="">
-							<h4>Lorem impsum</h4>
-						</div>
-						<div class="testimonial-1">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-								Reprehenderit quidem aut, nam, obcaecati veniam cupiditate 
-								consectetur illum, repudiandae necessitatibus tempore similique 
-								et dolores officiis excepturi? 
-								A delectus excepturi optio sequi.
-							</p>
-							<img src="images/starts.png" alt="">
-							<h4>Lorem impsum</h4>
-						</div>
-					</div>
-			</section>
-			<footer class="footer">
-				<div class="footer-content container">
-					<div class="link">
-						<h3>Lorem</h3>
-						<ul>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-						</ul>
-					</div>
-					<div class="link">
-						<h3>Lorem</h3>
-						<ul>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-						</ul>
-					</div>
-					<div class="link">
-						<h3>Lorem</h3>
-						<ul>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-							<li><a href="#">lorem</a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
-	</main>
+				</footer>
+		</main>
 </Layout>
 
 <style>
@@ -302,31 +273,47 @@ img{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 0 40px;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #13462e;
+    position: relative;
 }
 
 .logo{
-    font-size: 25px;
-    color: #9bce21;
-    text-transform: uppercase;
-    font-weight: 800;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
 }
 
-.menu .navbar ul li {
-    position: relative;
-    float: left;
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-.menu .navbar ul li a{
+.navbar a {
+    color: #fff;
+    text-decoration: none;
     font-size: 18px;
-    padding: 20px;
-    color: #111419;
-    display: block;
+    transition: color 0.3s;
 }
 
-.menu .navbar ul li a:hover{
-    color: #188103;
+.navbar a:hover {
+    color: #f0a500;
+}
+
+.cart img {
+    width: 30px;
+    cursor: pointer;
 }
 
 #menu{
@@ -436,14 +423,15 @@ span {
     height: 550px;
 }
 .oferts {
-    padding: 100px 0;
+    padding: 120px 0;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .offert-1{
-    flex-basis: calc(33.3% - 20px);
-    padding: 10px 15px;
+    flex-basis: calc(33.3% - 30px);
+    padding: 20px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -473,23 +461,23 @@ span {
     flex-basis: 50%;;
 }
 .products{
-padding: 0 0 50px 0;
+padding: 20px 0 70px 0;
 text-align: center;
 }
 .h2{
     font-size: 40px;
     color: #111419;
 }
-.box-container{
+.box-container {
     margin-top: 55px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
 
 .box{
     border-top: 2px solid #9bce21;
-    padding: 20px;
+    padding: 25px;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     background-color: #f6fafb;
@@ -550,18 +538,19 @@ text-align: center;
 }
 
 .Testimonial{
-    padding: 100px 0;
+    padding: 120px 0;
     text-align: center;
 }
 .Testimonial-content{
     display: flex;
     justify-content: space-between;
+    gap: 40px;
     margin-top: 50px;
 }
 
 .testimonial-1{
     flex-basis: calc(50% - 20px);
-    padding: 50px;
+    padding: 60px;
     text-align: left;
     background-color: #f6fafb;
     border-top: 5px solid #166602;
@@ -586,8 +575,12 @@ text-align: center;
     padding: 100px 0;
 }
 .footer-content{
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    gap: 40px;
+    padding: 0 40px;
 }
 .link h3{
     color: #ffffff;
@@ -654,8 +647,8 @@ text-align: center;
         display: none;
     }
     .oferts{
-        padding: 30px;
-        flex-direction: column;
+        padding: 40px 0;
+        gap: 20px;
     }
     .offert-1{
         margin-bottom: 15px;
@@ -669,10 +662,10 @@ text-align: center;
     .Testimonial-content{
         margin-top: 20px;
         flex-direction: column;
+        gap: 20px;
     }
     .testimonial-1{
-        padding: 25px;
-        margin-bottom: 25px
+        padding: 30px;
     }
     .footer{
         padding: 30px;
@@ -680,6 +673,320 @@ text-align: center;
     .footer-content{
         flex-direction: column;
         text-align: center;
+        padding: 0 20px;
+        gap: 20px;
+    }
+}
+
+.head {
+    width: 100%;
+    background-color: #13462e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.carrito-container {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1000;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.carrito-container h3 {
+    color: #13462e;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.carrito-items {
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.producto-carrito {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.producto-carrito img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.producto-carrito .producto-detalles {
+    flex-grow: 1;
+}
+
+.producto-carrito h4 {
+    color: #13462e;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.producto-carrito .precio {
+    color: #166602;
+    font-weight: 600;
+}
+
+.producto-carrito .cantidad {
+    color: #666;
+    font-size: 14px;
+}
+
+.carrito-total {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carrito-total p {
+    color: #13462e;
+    font-weight: 600;
+}
+
+.carrito-total span {
+    color: #166602;
+    font-size: 18px;
+}
+
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .box-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .carrito-container {
+        width: 300px;
+        right: -20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .box-container {
+        grid-template-columns: 1fr;
     }
 }
 </style>
+
+<script>
+// Definir tipos
+interface ProductoCarrito {
+    imagen: string;
+    titulo: string;
+    precio: string;
+    id: string;
+    cantidad: number;
+}
+
+// Obtener elementos del DOM con comprobación null
+const loadMoreBtn = document.querySelector('#load-more') as HTMLElement;
+const listadoProductos = document.querySelector('#list-1') as HTMLElement;
+const carrito = document.querySelector('#img-carrito') as HTMLElement;
+const contenedorCarrito = document.querySelector('.carrito-container') as HTMLElement;
+let articulosCarrito: ProductoCarrito[] = [];
+let currentItem = 8;
+
+// Cargar botón "Ver más"
+if (loadMoreBtn) {
+    loadMoreBtn.onclick = () => {
+        const boxes = [...document.querySelectorAll<HTMLElement>('.box-container .box')];
+        for(let i = currentItem; i < currentItem + 4 && i < boxes.length; i++){
+            if (boxes[i]) {
+                boxes[i].style.display = 'inline-block';
+            }
+        }
+        currentItem += 4;
+        if(currentItem >= boxes.length){
+            loadMoreBtn.style.display = 'none';
+        }
+    }
+}
+
+// Event Listeners
+cargarEventListeners();
+
+function cargarEventListeners() {
+    // Cuando agregas un producto presionando "Agregar al carrito"
+    if (listadoProductos) {
+        listadoProductos.addEventListener('click', agregarProducto);
+    }
+
+    // Mostrar/ocultar carrito al hacer clic
+    if (carrito) {
+        carrito.addEventListener('click', (e) => {
+            e.stopPropagation();
+            if (contenedorCarrito) {
+                contenedorCarrito.style.display = 
+                    contenedorCarrito.style.display === 'block' ? 'none' : 'block';
+            }
+        });
+    }
+
+    // Cerrar carrito al hacer clic fuera
+    document.addEventListener('click', (e) => {
+        if (contenedorCarrito && !contenedorCarrito.contains(e.target as Node) && 
+            e.target !== carrito) {
+            contenedorCarrito.style.display = 'none';
+        }
+    });
+
+    // Eliminar producto del carrito
+    if (contenedorCarrito) {
+        contenedorCarrito.addEventListener('click', eliminarProducto);
+    }
+}
+
+function agregarProducto(e: Event) {
+    e.preventDefault();
+    const target = e.target as HTMLElement;
+    if (target.classList.contains('agregar-carrito')) {
+        const productoSeleccionado = target.closest('.box') as HTMLElement;
+        if (productoSeleccionado) {
+            leerDatosProducto(productoSeleccionado);
+        }
+    }
+}
+
+function eliminarProducto(e: Event) {
+    const target = e.target as HTMLElement;
+    if (target.classList.contains('borrar-producto')) {
+        const productoId = target.getAttribute('data-id');
+        if (productoId) {
+            articulosCarrito = articulosCarrito.filter(producto => producto.id !== productoId);
+            carritoHTML();
+        }
+    }
+}
+
+function leerDatosProducto(producto: HTMLElement) {
+    const imagen = producto.querySelector('img');
+    const titulo = producto.querySelector('h3');
+    const precio = producto.querySelector('.precio');
+    const dataId = producto.querySelector('.agregar-carrito');
+
+    if (imagen && titulo && precio && dataId) {
+        const infoProducto: ProductoCarrito = {
+            imagen: imagen.src,
+            titulo: titulo.textContent || '',
+            precio: precio.textContent || '',
+            id: dataId.getAttribute('data-id') || '',
+            cantidad: 1
+        };
+
+        // Revisar si un elemento ya existe en el carrito
+        const existe = articulosCarrito.some(producto => producto.id === infoProducto.id);
+        if (existe) {
+            articulosCarrito = articulosCarrito.map(producto => {
+                if (producto.id === infoProducto.id) {
+                    producto.cantidad++;
+                    return producto;
+                }
+                return producto;
+            });
+        } else {
+            articulosCarrito = [...articulosCarrito, infoProducto];
+        }
+
+        carritoHTML();
+    }
+}
+
+function carritoHTML() {
+    if (!contenedorCarrito) return;
+    
+    // Limpiar el HTML
+    const carritoItems = contenedorCarrito.querySelector('.carrito-items');
+    if (!carritoItems) return;
+    
+    carritoItems.innerHTML = '';
+
+    // Calcular el total
+    let total = 0;
+
+    // Generar el HTML del carrito
+    articulosCarrito.forEach(producto => {
+        const precio = parseFloat(producto.precio.replace('$', ''));
+        total += precio * producto.cantidad;
+
+        const row = document.createElement('div');
+        row.classList.add('producto-carrito');
+        row.innerHTML = `
+            <img src="${producto.imagen}" alt="${producto.titulo}">
+            <div class="producto-detalles">
+                <h4>${producto.titulo}</h4>
+                <p class="precio">${producto.precio}</p>
+                <p class="cantidad">Cantidad: ${producto.cantidad}</p>
+            </div>
+            <button class="borrar-producto" data-id="${producto.id}">×</button>
+        `;
+        carritoItems.appendChild(row);
+    });
+
+    // Actualizar el total
+    const totalElement = contenedorCarrito.querySelector('.carrito-total span');
+    if (totalElement) {
+        totalElement.textContent = `$${total.toFixed(2)}`;
+    }
+}
+
+// Manejo del menú móvil
+const menuCheckbox = document.getElementById('menu') as HTMLInputElement;
+const navbar = document.querySelector('.navbar') as HTMLElement;
+const menuIcon = document.querySelector('.menu-icon') as HTMLElement;
+
+if (menuIcon && navbar) {
+    menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+}
+
+// Cerrar menú al hacer clic en un enlace
+if (navbar && menuCheckbox) {
+    document.querySelectorAll('.navbar a').forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove('active');
+            menuCheckbox.checked = false;
+        });
+    });
+}
+
+// Cerrar menú al hacer clic fuera
+if (navbar && menuIcon && menuCheckbox) {
+    document.addEventListener('click', (e: MouseEvent) => {
+        const target = e.target as HTMLElement;
+        if (!navbar.contains(target) && !menuIcon.contains(target)) {
+            navbar.classList.remove('active');
+            menuCheckbox.checked = false;
+        }
+    });
+}
+</script>
